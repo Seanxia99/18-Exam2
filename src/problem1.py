@@ -222,10 +222,10 @@ def problem1a(strings):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
-    result = []
+    a = []
     for k in range(len(strings)):
-        result = result + [len(strings[k])]
-    return result
+        a = a + [len(strings[k])]
+    return a
 
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
@@ -399,10 +399,9 @@ def problem1b(strings):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
-    list = problem1a(strings)
     total = 0
-    for k in range(len(list)):
-        if is_prime(list[k]) is True:
+    for k in range(len(strings)):
+        if is_prime(len(strings[k])):
             total = total + 1
     return total
 
@@ -601,7 +600,7 @@ def problem1c(strings):
     #          Tests have been written for you (above).
     # See  IMPORTANT  note before the DEF line of this function.
     # -------------------------------------------------------------------------
-    if is_prime(problem1b(strings)) is True:
+    if is_prime(problem1b(strings)):
         return True
     else:
         return False
@@ -792,7 +791,7 @@ def problem1d(strings):
     # -------------------------------------------------------------------------
 
     for k in range(len(strings)):
-        if is_prime(len(strings[k])) is True:
+        if is_prime(len(strings[k])):
             return strings[k]
     else:
         return - 1
