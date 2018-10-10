@@ -129,17 +129,8 @@ class Cloud(object):
           :rtype: int | float
         """
         # ---------------------------------------------------------------------
-        # DONE: 3. Implement and test this method.
+        # TODO: 3. Implement and test this method.
         # ---------------------------------------------------------------------
-        if rain_amount < self.water:
-            self.water = self.water - rain_amount
-            self.total = self.total + rain_amount
-            return rain_amount
-        else:
-            rain_amount = self.water
-            self.water = 0
-            self.total = self.total + rain_amount
-            return rain_amount
 
     def get_total_rain_amount(self):
         """
