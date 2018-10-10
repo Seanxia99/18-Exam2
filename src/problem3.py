@@ -26,7 +26,7 @@ def main():
     print(' to run the testing code as you complete the TODOs.')
 
     run_test_init()
-    run_test_rain()
+    # run_test_rain()
     # run_test_get_total_rain_amount()
     # run_test_merge_cloud()
 
@@ -80,7 +80,7 @@ class Cloud(object):
         # ---------------------------------------------------------------------
 
         self.capacity = capacity
-        if water < capacity:
+        if water <= capacity:
             self.water = water
         else:
             self.water = capacity
@@ -131,7 +131,6 @@ class Cloud(object):
         # ---------------------------------------------------------------------
         # TODO: 3. Implement and test this method.
         # ---------------------------------------------------------------------
-
     def get_total_rain_amount(self):
         """
         What comes in:
